@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { getData } from './utils/api'
+import Header from './components/Header'
+import Pet from './components/Pet'
+import Joke from './components/Joke'
 
 function App() {
   const [pet, setPet] = useState('')
@@ -15,18 +18,10 @@ function App() {
 
   return (
     <div className="flex flex-col justify-around items-stretch font-sans text-center h-screen bg-light2">
-      <header className="grow-0 h-32 pr-5 text-5xl bg-dark text-accent1 pt-6">
-        TailwindCSS and TDD
-      </header>
+      <Header title="TailwindCSS and TDD" />
       <main className="grow flex flex-col">
-        <div className=" mx-auto h-[20vh] p-2">
-          <img
-            className="object-contain h-full rounded-full"
-            src={`${pet}`}
-            alt="random dog"
-          />
-        </div>
-        <div className="grow bg-accent1">Text</div>
+        <Pet pet={pet} />
+        <Joke />
       </main>
     </div>
   )
