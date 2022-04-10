@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react'
-
 import Pets from './Pet'
 
 test('display an image from the server', () => {
@@ -24,5 +23,4 @@ test('image has an alt property of "random dog"', () => {
   // search an element that has a role of img
   const picture = screen.getByRole('img')
   expect(picture).toHaveProperty('alt', 'random dog')
-  console.log('=============', picture.src)
 })
