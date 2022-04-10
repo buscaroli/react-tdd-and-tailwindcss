@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import Pets from './Pet'
 
-test('display an image from the server', () => {
+test('an image is displayed from the server', () => {
   render(<Pets />)
 
   // search an element that has a role of img and an alt text of 'random dog'

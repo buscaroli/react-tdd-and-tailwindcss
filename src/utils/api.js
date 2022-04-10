@@ -1,17 +1,14 @@
 const { default: axios } = require('axios')
 
 const data = {
-  monster: {
-    url: 'https://app.pixelencounter.com/api/basic/svgmonsters?primaryColor=string',
-  },
   pet: {
     url: 'https://dog.ceo/api/breeds/image/random',
   },
   joke: {
-    url: 'https://api.chucknorris.io/jokes/random',
+    url: 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist,explicit&type=single',
   },
   coin: {
-    url: 'https://api.coingecko.com/api/v3/coins/bitcoin',
+    url: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=gbp&include_market_cap=false&include_24hr_vol=false&include_24hr_change=false&include_last_updated_at=false',
   },
 }
 
