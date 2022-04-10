@@ -24,4 +24,5 @@ test('image has an alt property of "random dog"', () => {
   // search an element that has a role of img
   const picture = screen.getByRole('img')
   expect(picture).toHaveProperty('alt', 'random dog')
+  console.log('=============', picture.src)
 })
