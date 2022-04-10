@@ -10,17 +10,17 @@ export const handlers = [
             'https://images.dog.ceo/breeds/mastiff-bull/n02108422_4445.jpg',
           status: 'success',
         },
-        {
-          message:
-            'https://images.dog.ceo/breeds/terrier-lakeland/n02095570_2127.jpg',
-          status: 'success',
-        },
-        {
-          status: 'error',
-          message:
-            'No route found for "GET /api/breeds/image/random2" with code: 0',
-          code: 404,
-        },
+        // {
+        //   message:
+        //     'https://images.dog.ceo/breeds/terrier-lakeland/n02095570_2127.jpg',
+        //   status: 'success',
+        // },
+        // {
+        //   status: 'error',
+        //   message:
+        //     'No route found for "GET /api/breeds/image/random2" with code: 0',
+        //   code: 404,
+        // },
       ])
     )
   },
