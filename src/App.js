@@ -17,7 +17,10 @@ function App() {
   }, [fetchData])
 
   return (
-    <div className="flex flex-col justify-around items-stretch font-sans text-center h-screen bg-light2">
+    <div
+      data-testid="container"
+      className="flex flex-col justify-around items-stretch font-sans text-center h-screen bg-light2"
+    >
       <Header title="TailwindCSS and TDD" />
       <main className="grow flex flex-col">
         <Pet pet={pet} />

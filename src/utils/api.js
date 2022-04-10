@@ -19,14 +19,14 @@ export const getData = async (target) => {
   try {
     const response = await axios.get(data[target]['url'])
     if (response.status >= 200 && response.status < 300) {
-      console.log('response: ', response.data)
+      // console.log('response: ', response.data)
       return response.data
     } else {
-      console.log('response error: ', response.data)
+      // console.log('response error: ', response.data)
       return { error: 'Something went wrong trying to fetch data.' }
     }
   } catch (error) {
-    console.log('api catch error: ', error)
+    // console.log('api catch error: ', error)
     return { error }
   }
 }
